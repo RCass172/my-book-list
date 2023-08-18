@@ -14,12 +14,12 @@ function BookCreate({onCreate}) {
     }
 
     return (
-        <div>
-            <h1>Add A Book</h1>
+        <div className="book-create">
+            <h3>Add A Book</h3>
             <form onSubmit={handleSubmit}>
                 <label>Title</label><br/>
-                <input value={title} onChange={handleChange} /><br/>
-                <button>Add</button>
+                <input className="input" value={title} onChange={handleChange} /><br/>
+                <button className="button">Add</button>
             </form>
         </div>
     )
