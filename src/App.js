@@ -5,7 +5,9 @@ function App() {
   const [books, setBooks] = useState([]);
 
   const createBook = (title) => {
-    console.log(title);
+    const updatedBooks = [...books, {id: Math.round(Math.random() * 1000), title}]
+    setBooks(updatedBooks);
+    console.log(books);
   };
 
   return (
